@@ -13,12 +13,13 @@ colorsBoxBg.forEach(function (colorBox) {
 })
 colorsBoxText.forEach(function (colorText) {
     colorText.addEventListener('click', function (event) {
+        let name = event.target.getAttribute('name')
         let textMainColor = event.target.style.backgroundColor
-        headerElem.forEach(function (elem) {
-            elem.style.color = textMainColor
-        })
-
+        bodyElem.className = `themes-${name}`
+        bodyElem.style.color = textMainColor
     })
 
 })
+
+
 
