@@ -1,15 +1,16 @@
 let $ = document
 const colorsBoxText = $.querySelectorAll('.color-box-text')
 
-const HTMLElem = $.getElementsByTagName('HTML')
+const HTMLElem = $.getElementsByTagName('html')
 
 colorsBoxText.forEach(function (colorText) {
     colorText.addEventListener('click', function (event) {
- 
+        
+console.log(HTMLElem)
         let name = event.target.getAttribute('name')
-        let textMainColor = event.target.style.backgroundColor
-        HTMLElem[0].className = `themes-${name}`
-        HTMLElem[0].style.color = textMainColor
+        console.log(HTMLElem)
+        HTMLElem[0].dataTheme = `themes-${name}`
+        HTMLElem[0].setAttribute('data-theme', `themes-${name}`) 
     })
 
 })

@@ -1,3 +1,34 @@
+:root {
+  --primary-base-default: #9e9e9e;
+  --green: #7bff00;
+  --blue: #0000ff;
+  --yellow: #f2ff00;
+  --purple: #ff00d4;
+}
+
+html[data-theme='themes-green'] {
+
+  color: var(--green);
+
+}
+
+html[data-theme='themes-blue'] {
+
+  color: var(--blue);
+
+}
+
+html[data-theme='themes-yellow'] {
+
+  color: var(--yellow);
+
+}
+
+html[data-theme='themes-purple'] {
+
+  color: var(--purple);
+
+}
 
 body {
   color: var(--white-color);
