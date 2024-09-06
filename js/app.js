@@ -9,7 +9,6 @@ colorsBoxText.forEach(function (colorText) {
 console.log(HTMLElem)
         let name = event.target.getAttribute('name')
         console.log(HTMLElem)
-        HTMLElem[0].dataTheme = `themes-${name}`
         HTMLElem[0].setAttribute('data-theme', `themes-${name}`) 
     })
 
