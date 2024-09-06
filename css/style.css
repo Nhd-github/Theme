@@ -1,8 +1,4 @@
-:root {
-  --section-color: #616161;
-  --white-color: #F8F8FF;
-  --header-color: #444649;
-}
+
 
 body {
   color: var(--white-color);
